@@ -13,7 +13,6 @@ phases:
      commands:
    build:
      commands:
-         - npm run production
          - php artisan migrate --force
          - php artisan db:seed
 artifacts:
