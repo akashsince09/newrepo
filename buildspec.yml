@@ -11,8 +11,8 @@ phases:
          - curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
    pre_build:
      commands:
-         - composer install
-         - npm install
+         - apt install composer
+         - apt install npm
    build:
      commands:
          - npm run production
