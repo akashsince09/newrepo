@@ -9,12 +9,8 @@ phases:
          - apt-get install -y libpq-dev libzip-dev
          - apt-get install -y php-pgsql
          - curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-   pre_build:
-     commands:
-   build:
-     commands:
-         - php artisan migrate --force
-         - php artisan db:seed
+    
+   
 artifacts:
    files:
          - '**/*'
